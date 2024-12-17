@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    padding: 10px 20px;
+}
+
+#ui {
+    display: flex;
+    flex-direction: row;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 20px 20px;
+    width: 480px;
+    height: 480px;
+}
+
+.chessboard-square {
+    display: flex;
+    border-style: solid;
+    border-color: #121212;
+    border-width: 1px;
+    place-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.hover-text {
+    visibility: hidden;
+    text-align: center;
+    font-size: 1.5rem   ;
+}
+
+.chessboard-square-light {
+    background-color: #fef9c3;
+}
+
+.chessboard-square-dark {
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+.chessboard-square:hover {
+    opacity: 0.8;
+}
+
+.chessboard-square:hover .hover-text {
+    visibility: visible;
+}
+
+#text-displays {
+    padding: 10px;
+}
+
+.text-display {
+    font-size: 1.5rem;
+}
+
+.number-display {
+    font-size: 1.5rem;
+    color: #991b1b;
+}
+
