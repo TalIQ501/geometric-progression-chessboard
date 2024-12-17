@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,73 @@
     <title>Chessboard</title>
     <script src="main.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Chessboard</h1>
     </header>
     <section id="initial-explanation" class="explanation">
-
+        <p>The most popular story behind the invention of chess contains a very simple yet effective demonstration of a
+            certain mathematical concept. It goes like this: a minister in an Indian court has invented chess. The king
+            is impressed by this new game, and decides to let the inventor have any reward he wishes. The inventor
+            placed a grain of wheat on a chessboard (the same one he invented) and asked for double the previous square
+            until the last square was reached.</p>
+        <p>The king finds this request to be humourous, a small request for an impressive invention. But this devious
+            man proves that he was indeed the inventor of such a thoughtful and strategic game. Upon calculation, the
+            total amount exceeded what even the royal treasury could afford. One might ask, how does such a simple,
+            innocuous request end up being too much for a king to complete?</p>
+        <p>The answer lies in the mathematical concept of exponential growth. What is exponential growth? A practical
+            demonstration will help. Click the first square and move on to the next.</p>
     </section>
     <section id="ui">
         <div id="board-container">
-            
+
         </div>
         <div id="text-displays">
             <div id="exponent-display" class="text-display">
                 <p>The Exponent of this Square is:</p>
                 <div id="exponent-number" class="number-display">
-                    
+
                 </div>
             </div>
             <div id="series-display" class="text-display">
                 <div id="exponent-series" class="number-display"></div>
-                <p>The Series Sum Up to This Square is (Formula):</p>
+                <p>The Series Sum Up to This Square is:</p>
                 <div id="series-formula" class="number-display"></div>
             </div>
         </div>
     </section>
     <section id="after explanation" class="explanation">
-        
+        <p>As you would see, instead of growing at a constant rate, the difference grows on every successive square and
+            by the end of the board, the number becomes too large to even comprehend. And if we follow the request as it
+            is</p>
+        <p>Geometric progression is a sequence where the every successive number is achieved by multiplying the previous
+            number with a common ration. Mathematically, with a common ratio of 2 for example:</p>
+
+        <p>Calculating this for 64 squares is not easy, as it would require us to repeat the operation multiple times.
+            With a computer, this isn't difficult, if we use a simple for loop. However, for calculation by hand, it is
+            extremely tedious and there is a huge margin for error.</p>
+        <p>Fortunately, there is a formula for this entire operation. For an initial term "a", and a common ratio "r",
+            the nth term in a geometric progression is given by:</p>
+
+        <p>So a general geometric progression looks like this:</p>
+
+        <p>For the above case, this progression becomes:</p>
+
+        <p>Which is exactly what the particular situation transforms to.</p>
+
+        <p>But as per the story, the minister asked for the wheat grains in all squares, so they need to be added. In
+            sequences or progressions, the total sum of the progression is termed as a series. A series is generally
+            represented by the symbol:</p>
+
+        <p>However, this is a general series notation and not a proper formula. Fortunately, we also have a formula for
+            a geometric series:</p>
+
+        <p>Now, you can easily find the sum of the above series.</p>
+
+        <p></p>
+
     </section>
 </body>
+
 </html>

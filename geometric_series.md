@@ -1,10 +1,8 @@
-Would you find it surprising if you learnt that 
+The most popular story behind the invention of chess contains a very simple yet effective demonstration of a certain mathematical concept. It goes like this: a minister in an Indian court has invented chess. The king is impressed by this new game, and decides to let the inventor have any reward he wishes. The inventor placed a grain of wheat on a chessboard (the same one he invented) and asked for double the previous square until the last square was reached.
 
-The story goes like this: a minister in an Indian court has invented chess. The king is impressed by the game, and decides to let have any reward he wishes. The inventor placed a grain of wheat on a chessboard (the same one he invented) and asked for double the previous square until the last square was reached.
+The king finds this request to be humourous, a small request for an impressive invention. But this devious man proves that he was indeed the inventor of such a thoughtful and strategic game. Upon calculation, the total amount exceeded what even the royal treasury could afford. One might ask, how does such a simple, innocuous request end up being too much for a king to complete?
 
-The king finds this request to be humourous, a small request for an impressive invention. But upon calculation, the total amount exceeded what even the royal treasury could afford. One might ask, how does such a simple, innocuous request end up being too much for a king to complete?
-
-The answer lies in the nature of exponential growth. What is exponential growth? A practical demonstration will help. Click the first square and move on to the next.
+The answer lies in the mathematical concept of exponential growth. What is exponential growth? A practical demonstration will help. Click the first square and move on to the next.
 
 As you would see, instead of growing at a constant rate, the difference grows on every successive square and by the end of the board, the number becomes too large to even comprehend. And if we follow the request as it is
 
@@ -14,7 +12,9 @@ Geometric progression is a sequence where the every successive number is achieve
 
 Calculating this for 64 squares is not easy, as it would require us to repeat the operation multiple times. With a computer, this isn't difficult, if we use a simple for loop. However, for calculation by hand, it is extremely tedious and there is a huge margin for error.
 
-Fortunately, there is a formula for this entire operation. For an initial term "a", and a common ration "r", the nth term in a geometric progression is given by:
+
+
+Fortunately, there is a formula for this entire operation. For an initial term "a", and a common ratio "r", the nth term in a geometric progression is given by:
 
 arn-1
 
@@ -36,8 +36,8 @@ Sigma n
 
 However, this is a general series notation and not a proper formula. Fortunately, we also have a formula for a geometric series: 
 
-a(rn - 1)/(n-1)
+a(rn - 1)/(r-1)
 
-
+This simple formula allows you to 
 
 
