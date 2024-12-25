@@ -2,6 +2,7 @@ const boardContainer = document.getElementById('board-container');
 const seriesManualDisplay = document.getElementById('series-manual');
 const seriesFormulaDisplay = document.getElementById('series-formula');
 const expSeriesDisplay = document.getElementById('exponent-series');
+const geometricRatio = document.getElementById('geometric-ratio');     
 let sumSoFar = 0;
 
 const createSquare = (board, row, squareId) => {
@@ -57,16 +58,7 @@ const createBoard = (output, boardSize) => {
 createBoard(boardContainer, 64);
 
 const handleSquareClick = (id) => {
-    let numCount = '';
-    for (let i = 0; i < id ; i++) {
-        if (numCount === '') {
-            numCount += `${2 ** i}`;
-        } else {
-            numCount += ` + ${2 ** i}`;
-        }
-    }
-
-    updateExpSeriesDisplay(numCount);
+    updateRatio(id);
 
     //Using Formula
     seriesFormula = (2 ** id - 1) / (2 - 1);
@@ -80,4 +72,8 @@ const updateSeriesFormulaDisplay = (series) => {
 
 const updateExpSeriesDisplay = (series) => {
     expSeriesDisplay.textContent = series;
+}
+
+const updateRatio = (ratio) => {
+    geometricRatio.textContent = ratio
 }

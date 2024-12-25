@@ -38,6 +38,10 @@ However, this is a general series notation and not a proper formula. Fortunately
 
 a(rn - 1)/(r-1)
 
-This simple formula allows you to 
+Now, you can easily find the sum of the above series.
 
+1(2^64 - 1)/(2-1)
+2^64 - 1
+18446744073709552000
 
+Which is what the above 

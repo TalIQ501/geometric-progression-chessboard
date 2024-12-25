@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Chessboard</title>
+    <title>Geometric Progression</title>
     <script src="main.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Chessboard</h1>
+        <h1>Geometric Progression</h1>
     </header>
     <section id="initial-explanation" class="explanation">
         <p>The most popular story behind the invention of chess contains a very simple yet effective demonstration of a
@@ -26,7 +26,7 @@
         <p>The answer lies in the mathematical concept of exponential growth. What is exponential growth? A practical
             demonstration will help. Click the first square and move on to the next.</p>
     </section>
-    <section id="ui">
+    <section id="ui" class="flex-row">
         <div id="board-container">
 
         </div>
@@ -38,9 +38,36 @@
                 </div>
             </div>
             <div id="series-display" class="text-display">
-                <div id="exponent-series" class="number-display"></div>
+                <div id="series-form" class="eq-display">
+                    <math display="block">
+                        <mrow>
+                          <mfrac>
+                            <mrow>
+                              <mrow>
+                                <mi>1</mi>
+                              </mrow>
+                                <mrow>
+                                    <mi>(</mi>
+                                  <msup>
+                                    <mi>2</mi>
+                                    <mn id="geometric-ratio">n</mn>
+                                  </msup>
+                                  <mo>−</mo>
+                                  <mi>1</mi>
+                                  <mi>)</mi>
+                                </mrow>
+                            </mrow>
+                            <mrow>
+                              <mi>2</mi>
+                              <mo>⁢-</mo>
+                              <mi>1</mi>
+                            </mrow>
+                          </mfrac>
+                        </mrow>
+                      </math>
                 <p>The Series Sum Up to This Square is:</p>
                 <div id="series-formula" class="number-display"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -51,15 +78,45 @@
         <p>Geometric progression is a sequence where the every successive number is achieved by multiplying the previous
             number with a common ration. Mathematically, with a common ratio of 2 for example:</p>
 
+        <div class="equation">
+            <math class="eq">
+                1, (1 * 2), (2*2), (2*2 * 2) ...
+              </math>
+        </div>
+
         <p>Calculating this for 64 squares is not easy, as it would require us to repeat the operation multiple times.
             With a computer, this isn't difficult, if we use a simple for loop. However, for calculation by hand, it is
             extremely tedious and there is a huge margin for error.</p>
         <p>Fortunately, there is a formula for this entire operation. For an initial term "a", and a common ratio "r",
             the nth term in a geometric progression is given by:</p>
 
+            <div class="equation">
+                <math class="eq">
+                    <var>ar</var><sup>n-1</sup>
+                  </math>
+            </div>
+            
         <p>So a general geometric progression looks like this:</p>
 
+        <div class="equation">
+            <math class="eq">
+                <var>ar</var><sup>1-1</sup>, <var>ar</var><sup>2-1</sup>, <var>ar</var><sup>3-1</sup>,...
+              </math>
+        </div>
+
+        <div class="equation">
+            <math class="eq">
+                <var>a</var>, <var>ar</var>, <var>ar</var><sup>2</sup>,...
+              </math>
+        </div>
+
         <p>For the above case, this progression becomes:</p>
+
+        <div class="equation">
+            <math class="eq">
+                <var>1</var>, <var>2</var>, <var>2<sup>2</sup></var>
+              </math>
+        </div>
 
         <p>Which is exactly what the particular situation transforms to.</p>
 
@@ -67,14 +124,50 @@
             sequences or progressions, the total sum of the progression is termed as a series. A series is generally
             represented by the symbol:</p>
 
+        <div class="equation">
+            <math class="eq">
+                <var>&sum;n</var>
+              </math>
+        </div>
+
         <p>However, this is a general series notation and not a proper formula. Fortunately, we also have a formula for
             a geometric series:</p>
+
+        
+
 
         <p>Now, you can easily find the sum of the above series.</p>
 
         <p></p>
 
     </section>
+    <section class="equations-template">
+        <math display="block">
+            <mrow>
+              <mfrac>
+                <mrow>
+                  <mrow>
+                    <mi>a</mi>
+                  </mrow>
+                    <mrow>
+                        <mi>(</mi>
+                      <msup>
+                        <mi>r</mi>
+                        <mn>n</mn>
+                      </msup>
+                      <mo>−</mo>
+                      <mi>1</mi>
+                      <mi>)</mi>
+                    </mrow>
+                </mrow>
+                <mrow>
+                  <mi>r</mi>
+                  <mo>⁢-</mo>
+                  <mi>1</mi>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </math>
+    </section>
 </body>
-
 </html>

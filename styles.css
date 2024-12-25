@@ -8,10 +8,44 @@
 
 body {
     font-family: 'Roboto';
+    background: #fff;
+}
+
+.dark {
+    background: #1c1917;
+}
+
+math {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: italic;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: 10px;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 0.1px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 header {
     padding: 10px 20px;
+}
+
+header h1 {
+    color: #0284c7;
 }
 
 .explanation {
@@ -19,9 +53,14 @@ header {
     padding: 10px;
 }
 
-#ui {
-    display: flex;
-    flex-direction: row;
+.equation {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.eq {
+    display: block;
 }
 
 #board {
